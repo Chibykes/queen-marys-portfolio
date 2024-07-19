@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
             className="
               w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] 
               relative inline-block shrink-0 group isolate
-              mx-auto -translate-x-8
+              mx-auto lg:-translate-x-8 -translate-x-4
           "
           >
             <Image

@@ -6,7 +6,7 @@ import Link from "next/link";
 const Hero: React.FC = () => {
   return (
     <section className="relative lg:h-screen min-h-screen">
-      <header className="relative flex justify-between items-center px-8 py-4 bg-white shadow-lg">
+      <header className="relative flex justify-between items-center px-8 py-4 bg-white no-shadow-lg">
         {/* <div className="absolute left-0 right-0 bottom-0 w-full mx-auto h-px rounded-[50%] bg-[#ff8585]"></div> */}
         <Logo />
         <nav className="lg:flex hidden justify-end items-center gap-4">
@@ -26,21 +26,28 @@ const Hero: React.FC = () => {
         {/* <CgMenuRight className="text-3xl"/> */}
 
         <Link href={"#"} className="
-            text-sm bg-transparent border-2 border-black text-black rounded-sm px-4 py-2
-            hover:bg-primary hover:text-white hover:border-primary duration-200
+            text-base border-2 rounded-md px-6 py-2
+            hover:bg-transparent hover:border-black hover:text-black 
+            bg-primary text-white border-primary duration-200
           ">
               Resume
           </Link>
       </header>
 
-      <div className="py-4 px-8 h-full">
+      <div className="py-4 px-8 h-full relative isolate">
+        <Image
+          src={"/bg.svg"}
+          className="w-full h-full object-cover object-bottom opacity-10 -z-10"
+          alt="bg"
+          fill
+        />
         <div className="
           max-w-6xl mx-auto grid lg:grid-cols-2 
           grid-cols-1 gap-12 lg:gap-20 content-center 
           h-full py-8
         ">
           <div className="space-y-8 lg:block flex flex-col justify-center items-center lg:text-left text-center">
-            <p className="text-6xl font-bold text-primary">
+            <p className="text-6xl font-black text-primary">
               QueenMary Chinanu Ekpebuwa
             </p>
             <p className="text-2xl font-medium text-neutral-600">
@@ -72,14 +79,14 @@ const Hero: React.FC = () => {
           >
             <Image
               src="/hero_img.jpg"
-              className="object-cover object-center aspect-square grayscale group-hover:grayscale-0"
+              className="rounded-md object-cover object-center aspect-square grayscale group-hover:grayscale-0"
               alt="Mary Queen"
               fill
             />
             <div className="
               absolute left-8 top-8 lg:left-12 lg:top-12 
               w-full h-full border border-[#ff8585] no-bg-[#ff8585] 
-              -z-10
+              -z-10 rounded-md
             "></div>
           </div>
         </div>

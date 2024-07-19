@@ -5,53 +5,29 @@ import { LuExternalLink } from "react-icons/lu";
 const Projects: React.FC = () => {
   const projects = [
     {
-      image: "/projects/dashboard.jpg",
-      title: "World Map data",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, hic!",
-      link: "#",
+      image: "/projects/staff-survey.jpeg",
+      title: "Staff Survery Analysis",
+      description: "A report showcasing staff performance and pain points in a company",
+      link: "https://app.powerbi.com/groups/me/reports/db643b80-4714-4ee8-8d8b-6a989c2a1ce8/ReportSection?bookmarkGuid=d80a2813-f452-4464-90b6-7477a16ed827&bookmarkUsage=1&ctid=b07ffba6-9b09-4de0-8b17-fe66f0af70c0&portalSessionId=47c0c27e-422a-4910-bcd3-522ed1647508&fromEntryPoint=export",
     },
     {
-      image: "/projects/dashboard2.jpg",
-      title: "Replica Dashboard",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, hic!",
-      link: "#",
+      image: "/projects/quarterly-report.jpeg",
+      title: "Company Quarterly Report",
+      description: "Analysis detailing a company quarterly report",
+      link: "https://app.powerbi.com/groups/me/reports/fb2945ae-0cc7-4230-b455-ff8db464236a/ReportSection?bookmarkGuid=28559f67-ca75-424f-af69-5eae9280b78b&bookmarkUsage=1&ctid=b07ffba6-9b09-4de0-8b17-fe66f0af70c0&portalSessionId=47c0c27e-422a-4910-bcd3-522ed1647508&fromEntryPoint=export",
     },
     {
-      image: "/projects/kpi-infographic.jpg",
-      title: "KPI Analysis",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, hic!",
-      link: "#",
+      image: "/projects/titanic-analysis.jpeg",
+      title: "Titanic Survival Analysis",
+      description: "A personal project",
+      link: "https://app.powerbi.com/groups/me/reports/d3eac25c-5d01-4861-a842-7c222128a9c5/ReportSection?bookmarkGuid=e524f0c3-9ee0-46e8-bf30-e6d60b7f901e&bookmarkUsage=1&ctid=b07ffba6-9b09-4de0-8b17-fe66f0af70c0&portalSessionId=47c0c27e-422a-4910-bcd3-522ed1647508&fromEntryPoint=export",
     },
     {
-      image: "/projects/scoreboard.jpg",
-      title: "Financial Scoreboard",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, hic!",
-      link: "#",
-    },
-    {
-      image: "/projects/scoreboard.jpg",
-      title: "Financial Scoreboard",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, hic!",
-      link: "#",
-    },
-    {
-      image: "/projects/kpi-infographic.jpg",
-      title: "KPI Analysis",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, hic!",
-      link: "#",
-    },
-    {
-      image: "/projects/dashboard.jpg",
-      title: "World Map data",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, hic!",
-      link: "#",
-    },
-    {
-      image: "/projects/dashboard2.jpg",
-      title: "Replica Dashboard",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, hic!",
-      link: "#",
-    },
+      image: "/projects/worldcup-survey.jpeg",
+      title: "World Cup Survey",
+      description: "A personal project",
+      link: "https://app.powerbi.com/groups/me/reports/d1f697fd-f771-4c08-bbde-0e9ae1568c70/ReportSection?bookmarkGuid=6e049c60-8304-45c7-ac70-0aa57a1a1ea4&bookmarkUsage=1&ctid=b07ffba6-9b09-4de0-8b17-fe66f0af70c0&portalSessionId=47c0c27e-422a-4910-bcd3-522ed1647508&fromEntryPoint=export",
+    }
   ];
 
   return (

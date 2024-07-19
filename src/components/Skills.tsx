@@ -9,7 +9,7 @@ import {
 
 const Skills: React.FC = () => {
   return (
-    <section className="relative flex flex-col gap-8">
+    <section id="tools" className="relative flex flex-col gap-8">
       <div className="py-8 px-4 space-y-2">
         <div
           className="

@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
         </nav>
         {/* <CgMenuRight className="text-3xl"/> */}
 
-        <Link href={"#"} className="
+        <Link target="_blank" href={"https://drive.google.com/file/d/1LD7W8S-wCeOQrjVs4EDHW6UxXfaz-xwg/view?usp=drivesdk"} className="
             text-base border-2 rounded-md px-6 py-2
             hover:bg-transparent hover:border-black hover:text-black 
             bg-primary text-white border-primary duration-200
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
         ">
           <div className="space-y-8 lg:block flex flex-col justify-center items-center lg:text-left text-center">
             <p className="text-6xl font-black text-primary">
-              QueenMary Chinanu Ekpebuwa
+              Mary Chinanu Ekpebuwa
             </p>
             <p className="text-2xl font-medium text-neutral-600">
               Human Resource Manager & Senior Data Analyst

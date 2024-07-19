@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section className="relative flex flex-col gap-8">
+    <section id="projects" className="relative flex flex-col gap-8">
       <div className="space-y-2">
         <div
           className="

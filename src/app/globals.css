@@ -34,6 +34,10 @@ a{
   display: inline-block;
 }
 
+.text-fill-none:hover{
+  -webkit-text-fill-color: transparent;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

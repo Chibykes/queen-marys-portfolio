@@ -1,6 +1,7 @@
 import { FaMicrosoft, FaPeopleGroup } from "react-icons/fa6";
 import { LuFileStack } from "react-icons/lu";
 import { MdBarChart, MdOutlineDataThresholding } from "react-icons/md";
+import { TbReport } from "react-icons/tb";
 
 const About: React.FC = () => {
   const interests = [
@@ -30,7 +31,7 @@ const About: React.FC = () => {
       description: "I transform numbers into impactful visuals, making complex insights clear and compelling for any audience.",
     },
     {
-      icon: MdBarChart,
+      icon: TbReport,
       name: "Reports",
       description: "I craft compelling reports. Complex data becomes clear stories, guiding decisions with impactful visuals and insightful analysis.",
     },

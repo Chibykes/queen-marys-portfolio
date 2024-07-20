@@ -1,17 +1,7 @@
-import Logo from "@/components/Logo";
-import { Nunito_Sans } from "next/font/google";
 import { ImageResponse } from "next/og";
 
 // Route segment config
 export const runtime = "edge";
-
-// Image metadata
-export const size = {
-  width: 70,
-  height: 70,
-};
-
-export const contentType = "image/png";
 
 export async function GET() {
   const font = async () => {

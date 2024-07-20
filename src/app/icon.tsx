@@ -1,30 +1,24 @@
-import Logo from "@/components/Logo";
-import { Nunito_Sans } from "next/font/google";
 import { ImageResponse } from "next/og";
 
 // Route segment config
-export const runtime = 'edge'
- 
-// Image metadata
-export const alt = 'MQ Logo'
+export const runtime = "edge";
 export const size = {
-  width: 70,
+  width: 80,
   height: 70,
-}
- 
-export const contentType = 'image/png'
+};
 
+export const contentType = "image/png";
 
-export async function GET() {
-
-  const font = async () => {
-    const response = await fetch(new URL("../../Poppins-ExtraBold.ttf", import.meta.url));
-    const Poppins =  await response.arrayBuffer();
-    return Poppins;
-  }
+// Image generation
+export default async function Icon() {
+  // Font
+  const poppins = fetch(
+    new URL("./Poppins-ExtraBold.ttf", import.meta.url)
+  ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
     (
+      // ImageResponse JSX element
       <div
         className=""
         style={{
@@ -33,6 +27,7 @@ export async function GET() {
           alignItems: "center",
           fontFamily: "Poppins",
           background: "rgb(226 98 98)",
+          borderRadius: ".5rem",
           paddingTop: "7px",
           color: "#fff",
           fontSize: "2.25rem",
@@ -43,15 +38,17 @@ export async function GET() {
         MQ
       </div>
     ),
+    // ImageResponse options
     {
-      width: 80,
-      height: 70,
+      // For convenience, we can re-use the exported opengraph-image
+      // size config to also set the ImageResponse's width and height.
+      ...size,
       fonts: [
         {
           name: "Poppins",
-          data: await font(),
-          weight: 800,
+          data: await poppins,
           style: "normal",
+          weight: 800,
         },
       ],
     }

@@ -30,6 +30,7 @@ export default async function Image() {
           alignItems: "center",
           fontFamily: "Poppins",
           background: "rgb(226 98 98)",
+          borderRadius: ".5rem",
           paddingTop: "7px",
           color: "#fff",
           fontSize: "2.25rem",
